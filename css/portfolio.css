@@ -12,6 +12,7 @@ button.nav:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  transition: color var(--animation), background-color var(--animation);
 }
 
 .button .container {
@@ -87,6 +88,7 @@ h1 {
 .our-works li:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow var(--animation);
 }
 
 .small-border {
@@ -104,6 +106,7 @@ h1 {
 .our-works li:hover .description {
   transform: translateY(0);
   opacity: 1;
+  transition: transform var(--animation), opacity var(--animation);
 }
 
 .description {

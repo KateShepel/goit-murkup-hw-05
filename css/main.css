@@ -225,7 +225,7 @@ h3 {
   outline: 1px solid blue;
 
   border-radius: 50%;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 .webs-link-icon {
@@ -235,11 +235,13 @@ h3 {
 .webs-link li:hover,
 .webs-link li:focus {
   background-color: var(--accent-color);
+  transition: background-color var(--animation);
 }
 
 .webs-link li:hover .webs-link-icon,
 .webs-link li:focus .webs-link-icon {
   fill: var(--primary-white-color);
+  transition: fill var(--animation);
 }
 
 /* .webs-link .link::before {
@@ -300,11 +302,13 @@ h3 {
 .client:hover,
 .client:focus {
   border: 1px solid var(--accent-color);
+  transition: solid var(--animation);
 }
 
 .client:hover .client-logo,
 .client:focus .client-logo {
   fill: var(--accent-color);
+  transition: fill var(--animation);
 }
 
 /* Modal window */

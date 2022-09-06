@@ -68,6 +68,8 @@ body {
   line-height: 1.71;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+
+  margin: 0;
 }
 
 img {
@@ -165,9 +167,11 @@ ul {
   color: var(--title-text-color);
   text-decoration: none;
 }
+
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--accent-color);
+  transition: color var(--animation);
 }
 
 .site-nav a.current::after {
@@ -201,12 +205,14 @@ ul {
 }
 .item:hover a {
   color: var(--accent-color);
+  transition: color var(--animation);
 }
 .item:hover .icon-envelope,
 .item:focus .icon-envelope,
 .item:hover .icon-smartphone,
 .item:focus .icon-smartphone {
   fill: var(--accent-color);
+  transition: fill var(--animation);
 }
 
 .contacts .item {
@@ -300,6 +306,8 @@ ul {
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 /* .footer-webs-link li {
@@ -329,4 +337,5 @@ ul {
 .footer-webs-link li:hover,
 .footer-webs-link li:focus {
   background-color: var(--accent-color);
+  transition: background-color var(--animation);
 }
